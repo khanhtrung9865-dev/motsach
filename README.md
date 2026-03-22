@@ -1,9 +1,18 @@
-# Giới thiệu sản phẩm: Web bán sách
+# Giới thiệu sản phẩm: Web bán sách đơn giản được xây dựng bằng HTML, CSS và JavaScript.
 ![Trang chủ](anhreadme/trangchinh.png)
-## Người tạo: 
+## Người thực hiện: 
 - Nguyễn Khánh Trung
 - Lớp: 24TTH02
 - MSSV: 24TH01010
+## Chức năng
+- Hiển thị danh sách sách
+- Thanh điều hướng (navbar)
+- Đăng nhập / đăng xuất
+- Xem thông tin sản phẩm
+## Cách sử dụng
+- Mở file index.html để chạy website
+- Sử dụng menu để điều hướng giữa các trang
+- Đăng nhập để sử dụng các chức năng nâng cao
 ## Giao diện
 ![Trang chủ](anhreadme/dautrang.png)
 - Tên trang web.
@@ -24,3 +33,6 @@
 - Trang đăng nhập.
 ![Trang chủ](anhreadme/footer.png)
 - Luôn có footer trên tất cả các trang.
+## Demo
+https://khanhtrung9865-dev.github.io/motsach/
+## Link youtube
