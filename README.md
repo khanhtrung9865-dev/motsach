@@ -18,6 +18,9 @@
 - Khi bấm vào hỉnh ảnh trong card sản phẩm sẽ chuyển sang trang chi tiết sản phẩm.
 ![Trang chủ](anhreadme/giohang.png)
 - Giỏ hàng có chức năng tính toán tổng số hóa đơn, có thể thêm bớt hoặc xóa trực tiếp.
+- Chỉ có thể thanh toán khi đã đăng nhập
 - Khi muốn chọn thêm có thể quay lại trang chủ bằng nút quay lại có trên tất cả các trang điều hướng của web.
+![Trang chủ](anhreadme/dangnhap.png)
+- Trang đăng nhập.
 ![Trang chủ](anhreadme/footer.png)
 - Luôn có footer trên tất cả các trang.
