@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container-cart {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background: #f0f0f0;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background: #fafafa;
+}
+td img {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+}
+td button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+td button:hover {
+  background: #bbb;
+}
+td button:last-child {
+  background: rgb(149, 247, 178);
+  color: rgb(0, 0, 0);
+}
+
+td button:last-child:hover {
+  background: rgb(69, 177, 126);
+}
+h2 {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.actions button:first-child {
+  background: rgb(156, 87, 87);
+  color: white;
+}
+
+.actions button:first-child:hover {
+  background: rgb(128, 58, 58);
+}
+.actions button:last-child {
+  background: #3b7883;
+  color: rgb(255, 255, 255);
+}
+
+.actions button:last-child:hover {
+  background: #3b628b;
+}
+/* Cột sản phẩm */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Ảnh */
+.product img {
+  width: 70px;
+  border-radius: 5px;
+}
+
+/* Tên sách */
+.product span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.product span:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* nút thanh toán */
+.btn-thanhtoan {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-thanhtoan:hover {
+  background: #218838;
+}

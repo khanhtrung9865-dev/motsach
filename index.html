@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chinh.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="tenweb">
+        <img src="hinhanh/book-open-svgrepo-com.svg">
+        MỌT SÁCH
+    </h1>
+    <div class="banner">
+    <img src="hinhanh/banner.jpg">
+</div>
+    <div class="khudangnhap">
+    <div class="nutlogin">
+    <a href="login.html" id="loginlink">
+        <button>Đăng nhập</button>
+    </a>
+    <a href="login.html" id="registerlink">
+        <button>Đăng ký</button>
+    </a>
+    </div> 
+    <button id="logoutbtn" class="nutdangxuat">Đăng xuất</button>
+    </div>
+<div class="cart-icon" onclick="window.location.href='giohang.html'">
+  🛒 <span id="cart-count">0</span>
+</div>
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm sách...">
+</div>
+    <div class="container">
+
+        <div class="sidebar">
+        <h2>Thể loại</h2>
+        <ul>
+            <li>Tiểu thuyết</li>
+            <li>Khoa học</li>
+            <li>Lịch sử</li>
+            <li>Truyện tranh</li>
+            <li>Giả tưởng</li>
+            <li>Trinh thám</li>
+            <li>Tâm lý</li>
+            <li>Tư liệu</li>
+            <li>Thiếu nhi</li>
+            <li>Self-help</li>
+        </ul>
+    </div>
+
+    <div id="main" class="main">
+      
+    </div>
+
+    
+
+    
+</div>
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script src="chinh.js"></script>
+    
+</body>
+</html>
