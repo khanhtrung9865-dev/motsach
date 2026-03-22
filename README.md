@@ -1,5 +1,5 @@
 # Giới thiệu sản phẩm: Web bán sách
-![Trang chủ](/.png)
+![Trang chủ](anhreadme/trangchinh.png)
 ## Người tạo: 
 - Nguyễn Khánh Trung
 - Lớp: 24TTH02
