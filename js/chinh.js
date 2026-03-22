@@ -134,3 +134,21 @@ menuItems.forEach((item, index) => {
         hienThiSach(ketQua);
     });
 });
+const btn = document.getElementById("backToTop");
+
+window.onscroll = function () {
+    let scrollTop = document.documentElement.scrollTop;
+
+    if (scrollTop > document.documentElement.scrollHeight / 2) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+btn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
