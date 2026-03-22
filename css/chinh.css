@@ -301,3 +301,25 @@ tr:hover {
 .nutdangxuat:hover {
     background: rgba(255, 0, 0, 0.4);
 }
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    display: none; /* ẩn ban đầu */
+
+    padding: 10px 15px;
+    font-size: 18px;
+
+    background: #5aa9aa;
+    color: white;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background: #3d8b8b;
+}
