@@ -9,6 +9,7 @@
 - Thanh điều hướng (navbar)
 - Đăng nhập / đăng xuất
 - Xem thông tin sản phẩm
+- Nút quat lại đầu trang khi cuộn đến 30% trang
 ## Cách sử dụng
 - Mở file index.html để chạy website
 - Sử dụng menu để điều hướng giữa các trang
