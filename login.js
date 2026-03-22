@@ -1,4 +1,7 @@
-// tài khoản có sẵn
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
 let accounts = [
     {username: "admin", password: "123"},
     {username: "user1", password: "111"},

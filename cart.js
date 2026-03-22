@@ -1,3 +1,7 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
 let gioHang = JSON.parse(localStorage.getItem("gioHang")) || [];
 
 function luuGioHang(){
@@ -21,7 +25,7 @@ function themVaoGio(id, soLuong){
     }
 
     luuGioHang();
-    capNhatSoLuongIcon(); // 👈 thêm dòng này
+    capNhatSoLuongIcon();
     alert("Đã thêm vào giỏ hàng");
 }
 function formatVND(x){

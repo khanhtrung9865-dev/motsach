@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="KhanhTrung.css">
+    <!-- Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 -->
+</head>
+<body>
+    <button id="backhome"> Về trang chính </button>
+    <h1>NGƯỜI LẬP WEB</h1>
+    <div class="card1">
+    <div class="profile">
+        <div class="left">
+            <img src="./hinhanh/KhanhTrung.jpg" alt="Ảnh của tôi">
+        </div>
+        <div class="right">
+            <h2>Nguyễn Khánh Trung</h2>
+            <p>SBD:24TH01010</p>
+            <P>lớp:24TTH02</P>
+            <p>Email:khanhtrung9865@gmail.com</p>
+            <p>SDT:0356078262</p>
+            <p>Chức vụ tạm thời: Trưởng nhóm</p>
+        </div>
+    </div>
+    </div>
+    <div class="card2">
+        <div class="profile1">
+        <div class="left1">
+            <img src="./hinhanh/GPT.jpg" alt="Ảnh cố vấn">
+        </div>
+        <div class="right1">
+            <h2>ChatGPT</h2>
+            <p>Chức vụ tạm thời:</p>
+            <ul>
+                <li>Phó nhóm</li>
+                <li>Cố vấn</li>
+                <li>Trợ lí</li>
+                <li>Tạp dịch</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+    <script src="KhanhTrung.js"></script>
+</body>
+</html>

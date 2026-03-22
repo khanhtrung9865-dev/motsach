@@ -1,3 +1,12 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
+const gohome=document.getElementById("backhome");
+gohome.addEventListener("click", () => {
+    window.location.href="index.html";
+})
+
 const tbody = document.getElementById("gioHangBody");
 
 function layGioHang(){
@@ -73,17 +82,27 @@ function xoaHet(){
 function capNhat(gioHangMoi){
   localStorage.setItem("gioHang", JSON.stringify(gioHangMoi));
   renderGioHang();
-  capNhatSoLuongIcon(); // 👈 thêm dòng này
+  capNhatSoLuongIcon();
 }
 
 function thanhToan(){
   let gioHang = layGioHang();
+  let currentUser = localStorage.getItem("currentUser");
 
+  //chưa đăng nhập
+  if(!currentUser){
+    alert("Bạn cần đăng nhập trước khi thanh toán!");
+    window.location.href = "login.html";
+    return; 
+  }
+
+  //giỏ hàng trống
   if(gioHang.length === 0){
     alert("Giỏ hàng đang trống!");
     return;
   }
 
+  // hợp lệ
   alert("Thanh toán thành công 🎉");
 
   // xóa giỏ hàng sau khi thanh toán

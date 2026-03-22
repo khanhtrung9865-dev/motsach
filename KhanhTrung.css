@@ -1,0 +1,157 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+}
+.profile1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+}
+.left img {
+    width: 250px;
+    border-radius: 10px;
+}
+.left1 img {
+    width: 250px;
+    border-radius: 10px;
+}
+.right {
+    max-width: 400px;
+}
+.right1 {
+    max-width: 400px;
+}
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c3a);
+    font-family: Arial, sans-serif;
+}
+
+.card1 {
+    width: 800px;
+    margin: 100px auto;
+    padding: 40px 40px 40px 15px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+
+    color: white;
+}
+.card2 {
+    width: 800px;
+    margin: 100px auto;
+    padding: 40px 40px 40px 15px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.left img {
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.left1 img {
+    width: 260px;
+    height: auto;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin-left: 80px;
+}
+.left img:hover {
+    transform: scale(1.05);
+}
+.left1 img:hover {
+    transform: scale(1.05);
+}
+.right h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.right1 h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.right p {
+    margin: 10px 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+.right1 p {
+    margin: 10px 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+H1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 90px;
+}
+#backhome{
+    display:inline-block;
+    margin:20px 0 20px 20px;
+    padding:10px 18px;
+    
+    background:#2c7be5;
+    color:white;
+    border:none;
+    border-radius:6px;
+    
+    font-size:14px;
+    font-weight:500;
+    
+    cursor:pointer;
+    transition:0.25s;
+}
+
+#backhome:hover{
+    background:#1a68d1;
+    transform:translateY(-2px);
+}
+
+#backhome:active{
+    transform:translateY(0);
+}
+.card2 {
+    min-height: 350px;
+}
+ul li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+p {
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-top: 0;
+}

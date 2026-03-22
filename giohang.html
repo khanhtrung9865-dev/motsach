@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="giohang.css">
+    <!-- Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 -->
 </head>
 <body>
+  <button id="backhome"> Về trang chính </button>
     <h1>🛒 Giỏ hàng</h1>
 <div class="container-cart">
 <table border="1" width="100%">
@@ -24,10 +28,17 @@
 <h2>Tổng tiền: <span id="tongTien"></span></h2>
 <div class="actions">
 <button onclick="xoaHet()">❌ Xóa tất cả</button>
-<button onclick="location.href='index.html'">⬅ Mua tiếp</button>
+<!-- <button onclick="location.href='index.html'">⬅ Mua tiếp</button> -->
 <button onclick="thanhToan()" class="btn-thanhtoan">💳 Thanh toán</button>
 </div>
 </div>
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
 <script src="data.js"></script>
 <script src="cart.js"></script>
 <script src="giohang.js"></script>

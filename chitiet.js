@@ -1,3 +1,7 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
 const gohome=document.getElementById("backhome");
 gohome.addEventListener("click", () => {
     window.location.href="index.html";
@@ -7,15 +11,6 @@ const dulieunhan=JSON.parse(localStorage.getItem("dulieutrangchu"));
 
 function hienthichitiet(data) {
     const detailContainer= document.getElementById("noidung");
-
-    // detailContainer.innerHTML=`
-    // <h1 class="dataname"> ${data.name}</h1>
-    // <img class="anhchinh" src="${data.image}" alt="${data.name}">
-    // <p class="mota"> ${data.mota}</p>
-    // <h2> Hình ảnh sản phẩm </h2>
-    // <div id="image-gallery" class="image-gallery"></div>
-    // `;
-
     detailContainer.innerHTML = `
 <div class="product-detail">
 

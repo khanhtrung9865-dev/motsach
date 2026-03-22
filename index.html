@@ -4,50 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 -->
     <link rel="stylesheet" href="chinh.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="tenweb">
-        <img src="hinhanh/book-open-svgrepo-com.svg">
-        MỌT SÁCH
-    </h1>
-    <div class="banner">
-    <img src="hinhanh/banner.jpg">
-</div>
-    <div class="khudangnhap">
-    <div class="nutlogin">
-    <a href="login.html" id="loginlink">
-        <button>Đăng nhập</button>
-    </a>
-    <a href="login.html" id="registerlink">
-        <button>Đăng ký</button>
-    </a>
-    </div> 
-    <button id="logoutbtn" class="nutdangxuat">Đăng xuất</button>
+    <div class="tenweb">
+        <div class="left">
+            <h2><img src="hinhanh/book-open-svgrepo-com.svg">MỌT SÁCH</h2>
+        </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm sách...">
+            </div>
+        <div class="cart-icon" onclick="window.location.href='giohang.html'">
+        🛒 <span id="cart-count">0</span>
+        </div>
     </div>
-<div class="cart-icon" onclick="window.location.href='giohang.html'">
-  🛒 <span id="cart-count">0</span>
-</div>
-<div class="search-box">
-  <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm sách...">
-</div>
+        <div class="navbar">
+        <div class="menu-item">Trang chủ</div>
+        <div class="menu-item">Sách mới</div>
+        <div class="menu-item">Sách bán chạy</div>
+        <div class="menu-item">Đang khuyến mãi</div>
+        <div class="menu-item">Hình thức thanh toán</div>        
+        <a href="KhanhTrung.html" class="nav-link">Người sáng lập</a>
+        <div class="khudangnhap">
+            <div class="nutlogin">
+                <a href="login.html" id="loginlink" class="icon-login">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div> 
+                <button id="logoutbtn" class="nutdangxuat">
+                    <i class="fa-solid fa-right-from-bracket"></i> Đăng xuất
+                </button>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="hinhanh/banner.jpg">
+    </div>
+
     <div class="container">
 
         <div class="sidebar">
         <h2>Thể loại</h2>
         <ul>
-            <li>Tiểu thuyết</li>
-            <li>Khoa học</li>
-            <li>Lịch sử</li>
-            <li>Truyện tranh</li>
-            <li>Giả tưởng</li>
-            <li>Trinh thám</li>
-            <li>Tâm lý</li>
-            <li>Tư liệu</li>
-            <li>Thiếu nhi</li>
-            <li>Self-help</li>
+            <li data-category="all">Tất cả</li>
+            <li data-category="Tiểu Thuyết">Tiểu Thuyết</li>
+            <li data-category="Khoa Học">Khoa Học</li>
+            <li data-category="Lịch Sử">Lịch Sử</li>
+            <li data-category="Tự Truyện">Tự Truyện</li>
+            <li data-category="Xã Hội">Xã Hội</li>
+            <li data-category="Trinh Thám">Trinh Thám</li>
+            <li data-category="Tâm Lý">Tâm Lý</li>
+            <li data-category="Tư Liệu">Tư Liệu</li>
+            <li data-category="Thiếu Nhi">Thiếu Nhi</li>
         </ul>
     </div>
 

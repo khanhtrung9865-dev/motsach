@@ -1,3 +1,7 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
 const books = [
     {
         id: "nhungnguoikhonkho",
@@ -33,7 +37,7 @@ const books = [
         id: "cuontheochieugio",
         name: "Cuốn theo chiều gió",
         tacgia: "Margaret Mitchell",
-        theloai: "Tiểu Thuyết",
+        theloai: "Tâm Lý",
         image: "hinhanh/cuontheochieugio/cuontheochieugio_1.jpg",
         imgCount: 3,
         mota: "Cuốn theo chiều gió, xuất bản lần đầu năm 1936, là một cuốn tiểu thuyết tình cảm của Margaret Mitchell, người đã giành giải Pulitzer với tác phẩm này năm 1937. Câu chuyện được đặt bối cảnh tại Georgia và Atlanta, miền Nam Hoa Kỳ trong suốt thời kì nội chiến và thời tái thiết.",
@@ -93,7 +97,7 @@ const books = [
         id: "hoangtube",
         name: "Hoàng tử bé",
         tacgia: "Antoine de Saint-Exupéry",
-        theloai: "Tiểu Thuyết",
+        theloai: "Thiếu Nhi",
         image: "hinhanh/hoangtube/hoangtube_1.jpg",
         imgCount: 3,
         mota: "Kể về một hoàng tử nhỏ cô đơn từ tiểu tinh cầu xa xôi viếng thăm rồi lại lìa xa Trái Đất, Hoàng tử bé được xem là một trong những tác phẩm thơ mộng nhất của mọi thời đại.",
@@ -103,7 +107,7 @@ const books = [
         id: "sherlockholmes",
         name: "Sherlock Holmes",
         tacgia: "Sir Arthur Conan Doyle",
-        theloai: "Tiểu Thuyết",
+        theloai: "Trinh Thám",
         image: "hinhanh/sherlockholmes/sherlockholmes_1.jpg",
         imgCount: 3,
         mota: "Cái tên Sherlock Holmes đã quen thuộc khắp thế giới tới mức một người dù có thể chưa hề đọc truyện về nhà thám tử này nhưng chỉ cần nghe tên cũng biết anh ta là ai. Sherlock Holmes đã trở thành một biểu tượng của văn hóa đại chúng toàn cầu. Khác với những nhân vật thần tượng chỉ vang bóng một thời, Sherlock Holmes kể từ khi xuất hiện lần đầu tiên năm 1887 qua sáng tạo của Sir Arthur Conan Doyle vẫn sống mãi qua ba thế kỉ.",
@@ -179,5 +183,66 @@ const books = [
         mota: "Enrico Bottini, một cậu bé mười tuổi người Ý, trong suốt năm học lớp ba đã đều đặn ghi lại những câu chuyện mà em ấn tượng. Từ những việc làm của thầy cô giáo, bạn bè, hàng xóm cho đến những câu chuyện được đọc trên lớp, những bức thư của mẹ cha hay những sự kiện trên đường phố, tất cả đều được ghi vào một cuốn nhật ký. Với Enrico, mỗi câu chuyện ấy là một bài học về tình thầy trò, bè bạn và cha con… về sự yêu thương, lòng trắc ẩn và tình yêu nước… Tất cả tạo nên một tác phẩm xúc động lòng người.",
         gia: 1000000,
     },
+    {
+        id: "gauguin",
+        name: "Gauguin",
+        tacgia: "George Roddam",
+        theloai: "Khoa Học",
+        image: "hinhanh/gauguin/gauguin_1.jpg",
+        imgCount: 3,
+        mota: "Đây là Gauguin kể về cuộc đời và sự nghiệp của họa sỹ Hậu Ấn tượng vĩ đại người Pháp Gauguin",
+        gia: 800000,
+    },
+    {
+        id: "tomsawyer",
+        name: "Những cuộc phiêu lưu của Tom Sawyer",
+        tacgia: "Mark Twain",
+        theloai: "Thiếu nhi",
+        image: "hinhanh/tomsawyer/tomsawyer_1.jpg",
+        imgCount: 3,
+        mota: "Với bản tính hiếu động, Tom Sawyer không lúc nào chịu yên. Chú quậy phá đủ trò tai quái từ trốn học, lừa bạn bè sơn hàng rào, cầm đầu lũ trẻ đánh nhau cho đến chữa mụn cóc ngoài nghĩa trang, “đính hôn” với cô bạn Becky, hay ra đảo sống đời cướp biển. Thế nhưng, cũng trong những chuyến phiêu lưu ấy, Tom và bạn bè đã khám phá ra một vụ giết người, phá tan âm mưu của toán cướp, cứu mạng Becky, tìm được kho báu và trở thành anh hùng của thị trấn.",
+        gia: 1000000,
+    },
+    {
+        id: "xahoi",
+        name: "Xã hội học",
+        tacgia: "DK",
+        theloai: "Xã Hội",
+        image: "hinhanh/xahoi/xahoi_1.jpg",
+        imgCount: 3,
+        mota: "Liệu sự phân chia trong xã hội có thể bị xóa bỏ? Điều gì dẫn dắt người ta đến con đường phạm tội? Internet đã biến đổi những mối quan hệ của chúng ta như thế nào? Suốt lịch sử, con người luôn đặt ra những câu hỏi về cách tổ chức xã hội của mình - và xã hội học đã mang đến những lời giải mà nay vẫn tiếp tục định hình thế giới ta đang sống.",
+        gia: 1000000,
+    },
+    {
+        id: "lichsu",
+        name: "Combo 2 cuốn: Lịch sử Việt Nam bằng hình ",
+        tacgia: "ST",
+        theloai: "Lịch Sử",
+        image: "hinhanh/lichsu/lichsu_1.jpg",
+        imgCount: 3,
+        mota: "Lịch sử Việt Nam bằng hình phác họa bức chân dung toàn cảnh về quá trình dựng nước và giữ nước, xuyên suốt từ thời xuất hiện các cư dân cổ xưa đầu tiên trên lãnh thổ cho đến khi hình thành một quốc gia hiện đại như ngày nay.",
+        gia: 1000000,
+    },
+    {
+        id: "dienrohaythanthanh",
+        name: "Điên rồ hay thần thánh",
+        tacgia: "José Echegaray",
+        theloai: "Tư Liệu",
+        image: "hinhanh/dienrohaythanthanh/dienrohaythanthanh_1.jpg",
+        imgCount: 3,
+        mota: "Nói ví von theo lời nhà phê bình Mérimée, cuộc đời của José Echegaray chính là một vở kịch có ba hồi: Hồi I. Nhà nghiên cứu khoa học; Hồi II. Nhà chính khách; Hồi III. Nhà soạn kịch.",
+        gia: 1000000,
+    },
+    {
+        id: "khongnoinuongtua",
+        name: "Không nơi nương tựa",
+        tacgia: "Dave Pelzer",
+        theloai: "Tự Truyện",
+        image: "hinhanh/khongnoinuongtua/khongnoinuongtua_1.jpg",
+        imgCount: 3,
+        mota: "Không Nơi Nương Tựa là câu chuyện thật của chính tác giả, kể về thời thơ ấu bị vùi dập đau thương của mình - một trong những trường hợp hắt hủi và bạo hành trẻ em nghiêm trọng nhất lịch sử bang California, Hoa Kỳ.",
+        gia: 700000,
+    },
+
 
 ];
