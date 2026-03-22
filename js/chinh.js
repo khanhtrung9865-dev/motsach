@@ -139,7 +139,7 @@ const btn = document.getElementById("backToTop");
 window.onscroll = function () {
     let scrollTop = document.documentElement.scrollTop;
 
-    if (scrollTop > document.documentElement.scrollHeight / 2) {
+    if (scrollTop > document.documentElement.scrollHeight * 0.3) {
         btn.style.display = "block";
     } else {
         btn.style.display = "none";
