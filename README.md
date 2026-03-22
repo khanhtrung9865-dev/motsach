@@ -19,25 +19,25 @@
 - Giỏ hàng hiển thị số lượng đã thêm vào, luôn đi theo khi cuộn chuột.
 - Thanh navbar với tính năng lọc card, gắn kèm nút đăng nhập, đăng xuất, đăng ký.
 - Banner.
-- ![Trang chủ](anhreadme/dautrang.png)
+![Trang chủ](anhreadme/dautrang.png)
 
 - Nội dung chính chứa card sản phẩm, thông tin sản phẩm, nút thêm vào giỏ theo số lượng trên thanh.
 - Sidebar có chức năng lọc theo loại sản phẩm.
-- ![Trang chủ](anhreadme/card.png)
+![Trang chủ](anhreadme/card.png)
 
 - Khi bấm vào hỉnh ảnh trong card sản phẩm sẽ chuyển sang trang chi tiết sản phẩm.
-- ![Trang chủ](anhreadme/chitiet.png)
+![Trang chủ](anhreadme/chitiet.png)
 
 - Giỏ hàng có chức năng tính toán tổng số hóa đơn, có thể thêm bớt hoặc xóa trực tiếp.
 - Chỉ có thể thanh toán khi đã đăng nhập
 - Khi muốn chọn thêm có thể quay lại trang chủ bằng nút quay lại có trên tất cả các trang điều hướng của web.
-- ![Trang chủ](anhreadme/giohang.png)
+![Trang chủ](anhreadme/giohang.png)
 
 - Trang đăng nhập.
-- ![Trang chủ](anhreadme/dangnhap.png)
+![Trang chủ](anhreadme/dangnhap.png)
 
 - Luôn có footer trên tất cả các trang.
-- ![Trang chủ](anhreadme/footer.png)
+![Trang chủ](anhreadme/footer.png)
 ## Demo
 https://khanhtrung9865-dev.github.io/motsach/
 ## Link youtube
