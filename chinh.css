@@ -232,7 +232,8 @@ tr:hover {
     justify-content: space-between;
     font-size: 18px;
     /* flex-wrap: wrap; */
-
+    overflow-x: auto;
+    white-space: nowrap;
     max-width: 1000px;
     margin: auto;
 
