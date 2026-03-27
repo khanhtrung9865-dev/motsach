@@ -14,10 +14,8 @@ MSSV: 24T01010 */
     justify-content: center;
     gap: 70px;
 }
-.left img {
-    width: 250px;
-    border-radius: 10px;
-}
+
+
 .left1 img {
     width: 250px;
     border-radius: 10px;

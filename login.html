@@ -10,6 +10,13 @@ Lớp: 24TTH002
 MSSV: 24T01010 -->
 </head>
 <body>
+    <div id="header-container"></div>
+
+    <script>
+        fetch("header.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("header-container").innerHTML=thongtin })
+    </script>
     <button id="backhome"> Về trang chính </button>
     <div> </div>
     <div class="container">
