@@ -30,6 +30,7 @@
 ![Trang chủ](anhreadme/chitiet.png)
 
 - Giỏ hàng có chức năng tính toán tổng số hóa đơn, có thể thêm bớt hoặc xóa trực tiếp.
+- Hiện thông báo khi thanh toán, hiện câu hỏi xác nhận khi người dùng bấm xóa hết.
 - Chỉ có thể thanh toán khi đã đăng nhập
 - Khi muốn chọn thêm có thể quay lại trang chủ bằng nút quay lại có trên tất cả các trang điều hướng của web.
 ![Trang chủ](anhreadme/giohang.png)
@@ -38,7 +39,7 @@
 ![Trang chủ](anhreadme/dangnhap.png)
 
 - Luôn có footer trên tất cả các trang.
-![Trang chủ](anhreadme/footer.png)
+![Trang chủ](anhreadme/footer1.png)
 ## Demo
 https://khanhtrung9865-dev.github.io/motsach/
 ## Link youtube
