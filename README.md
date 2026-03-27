@@ -7,6 +7,7 @@
 ## Chức năng
 - Hiển thị danh sách sách
 - Thanh điều hướng (navbar)
+- Sidebar ẩn khi màn hình nhỏ, có nút bung menu, bấm vào bất cứ đâu trên web để tắt
 - Đăng nhập / đăng xuất
 - Xem thông tin sản phẩm
 - Nút quat lại đầu trang khi cuộn đến 30% trang
