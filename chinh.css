@@ -1,0 +1,371 @@
+/* 
+Tên: Nguyễn Khánh Trung
+Lớp: 24TTH002
+MSSV: 24T01010 */
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.main{
+    flex: 1;
+}
+.tenweb {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 40px;
+}
+.search-box {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+.search-box input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+.left img {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.left h2 {
+    font-size: 40px;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+body{
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px,350px));
+gap:20px;
+padding:20px;
+justify-content: center;
+}
+.card{
+border: 1px solid #ccc;
+padding: 15px;
+text-align: center;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 10px;
+height: auto;
+transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.buy-box {
+    margin-top: auto;
+}
+.card img{
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+.sidebar{
+    width: 220px;
+    background: linear-gradient(180deg, #6ec1c2, #5aa9aa);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.sidebar h2{
+    margin-bottom: 15px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 8px;
+}
+.sidebar li:hover{
+    background: rgba(255,255,255,0.2);
+    transform: translateX(5px);
+}
+@media (max-width:768px){
+.navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .khudangnhap {
+        justify-content: center;
+        margin-top: 5px;
+    }
+.container{
+    flex-direction: column;
+    width:95%;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.main{
+    width:100%;
+}
+.card img{
+height:200px;
+}
+}
+.tensach {
+    color: rgb(51, 155, 82);
+}
+.giaban {
+margin-top:auto;
+font-weight:bold;
+color:#000000;
+}
+.nutlogin {
+    text-align: right;
+    margin: 10px 20px;
+    
+}
+button {
+    width: auto;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 150px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(109, 132, 236);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.nutlogin button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.actions {
+    margin-top: auto; /* luôn nằm dưới */
+}
+.soluong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 8px;
+}
+
+.soluong button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.soluong input {
+    width: 40px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.cart-icon {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 28px;
+  flex: 1;
+}
+
+#cart-count {
+  background: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+tr:hover {
+  background: #f9f9f9;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 1000px;
+    margin: auto;
+
+    background: linear-gradient(180deg, #6ec1c2, #5aa9aa);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.khudangnhap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+.navbar > div:not(.khudangnhap),
+.nav-link {
+    padding: 12px 18px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
+}
+.khudangnhap button {
+    border-radius: 0;
+}
+.navbar > div:not(.khudangnhap) {
+    border: none;
+}
+.navbar > div:not(.khudangnhap):hover,
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+ .icon-login {
+    font-size: 18px;
+    color: white;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.icon-login:hover {
+    background: rgba(0,0,0,0.2);
+}
+.nutdangxuat {
+    background: rgba(64, 149, 155, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nutdangxuat:hover {
+    background: rgba(255, 0, 0, 0.4);
+}
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    display: none; /* ẩn ban đầu */
+
+    padding: 10px 15px;
+    font-size: 18px;
+
+    background: #5aa9aa;
+    color: white;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background: #3d8b8b;
+}
+/* ===== MENU MOBILE ===== */
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* Ghi đè sidebar cũ */
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -260px; /* Ẩn đi */
+        width: 250px;
+        height: 100%;
+        z-index: 1000;
+
+        border-radius: 0; /* bỏ bo góc cho giống menu */
+    }
+
+    .sidebar.active{
+        left: 0;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
