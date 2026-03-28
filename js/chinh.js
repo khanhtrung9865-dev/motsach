@@ -152,3 +152,19 @@ btn.onclick = function () {
         behavior: "smooth"
     });
 };
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+const closeBtn = document.querySelector(".close-btn");
+
+closeBtn.onclick = () => {
+    sidebar.classList.remove("active");
+};
+document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.remove("active");
+    }
+});
