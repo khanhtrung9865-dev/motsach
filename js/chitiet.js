@@ -62,7 +62,7 @@ btnMinus.addEventListener("click", () => {
     }
 });
 
-    const galleryContainer=document.getElementById("image-gallery");
+const galleryContainer=document.getElementById("image-gallery");
 
     for (let i = 1; i <= 3; i++) {
   const img = document.createElement("img");

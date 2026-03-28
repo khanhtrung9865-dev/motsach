@@ -9,7 +9,7 @@ gohome.addEventListener("click", () => {
 
 const tbody = document.getElementById("gioHangBody");
 
-function layGioHang(){
+function layGioHang(){ //lấy dữ liệu từ localstorage 
   return JSON.parse(localStorage.getItem("gioHang")) || [];
 }
 
@@ -17,18 +17,18 @@ function formatVND(x){
   return x.toLocaleString("vi-VN") + " đ";
 }
 
-function renderGioHang(){
-    const gioHang = layGioHang();
-  tbody.innerHTML = "";
+function renderGioHang(){ //hiển thị giỏ hàng
+    const gioHang = layGioHang(); //lấy giỏ hàng
+  tbody.innerHTML = ""; //xóa bảng cũ
   let tong = 0;
 
-  gioHang.forEach((item, index)=>{
+  gioHang.forEach((item, index)=>{ // duyệt từng sản phẩm
     const tr = document.createElement("tr");
 
-    const thanhTien = item.soLuong * item.gia;
-    tong += thanhTien;
-
-    tr.innerHTML = `
+    const thanhTien = item.soLuong * item.gia; //tính tiền
+    tong += thanhTien; // tổng
+//gắn nội dung vào dòng
+    tr.innerHTML = ` 
   <td class="product">
     <img src="${item.image}">
     <span>${item.name}</span>
@@ -47,10 +47,10 @@ function renderGioHang(){
   </td>
 `;
 
-    tbody.appendChild(tr);
+    tbody.appendChild(tr); //gắn vào bảng
   });
 
-  document.getElementById("tongTien").textContent = formatVND(tong);
+  document.getElementById("tongTien").textContent = formatVND(tong); // tổng tiền
 }
 
 function tang(index){
@@ -75,10 +75,23 @@ function xoa(index){
 
 function xoaHet(){
     let gioHang = layGioHang();
-  gioHang = [];
-  capNhat(gioHang);
-}
 
+    // Kiểm tra giỏ hàng trống
+    if(gioHang.length === 0){
+        alert("Giỏ hàng đang trống!");
+        return;
+    }
+
+    // Hỏi xác nhận
+    let xacNhan = confirm("Bạn có chắc muốn xóa hết?");
+
+    if(xacNhan){
+        gioHang = [];
+        capNhat(gioHang);
+    }
+}
+//lưu lại giỏ hàng , tạo lại giao diện, cập nhật iccon giỏ hàng
+//tự động cập nhật khi có thay đổi
 function capNhat(gioHangMoi){
   localStorage.setItem("gioHang", JSON.stringify(gioHangMoi));
   renderGioHang();

@@ -3,10 +3,10 @@ Tên: Nguyễn Khánh Trung
 Lớp: 24TTH002
 MSSV: 24T01010 */
 const trangchinh = document.getElementById("main");
-
+// nhận thông tin, lưu vào storage, tạo giao diện card
 function hienThiSach(danhSach){
     trangchinh.innerHTML = "";
-    danhSach.forEach(book =>{
+    danhSach.forEach(book =>{ //lặp từng danh sách
         const card=document.createElement("div");
         card.classList.add("card");
 
@@ -26,13 +26,13 @@ function hienThiSach(danhSach){
             <button class="giohang">Thêm vào giỏ</button>
         </div>
         `;
-
+        //tạo nút
         const btnPlus = card.querySelector(".plus");
         const btnMinus = card.querySelector(".minus");
         const qtyInput = card.querySelector(".qty");
         const btnGio = card.querySelector(".giohang");
         const img = card.querySelector(".anh");
-
+        //gắn hành động
         btnPlus.onclick = ()=> qtyInput.value = Number(qtyInput.value)+1;
 
         btnMinus.onclick = ()=>{
@@ -51,7 +51,7 @@ function hienThiSach(danhSach){
             window.location.href = "chitiet.html";
         };
 
-        trangchinh.appendChild(card);
+        trangchinh.appendChild(card); //gắn card vào
     });
 }
 hienThiSach(books);
@@ -168,3 +168,4 @@ document.addEventListener("click", (e) => {
         sidebar.classList.remove("active");
     }
 });
+

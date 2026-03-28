@@ -14,7 +14,7 @@ const btnlogout = document.getElementById("btnlogout");
 const btnloginsubmit = document.getElementById("loginsubmit");
 const btnregistersubmit = document.getElementById("registersubmit");
 
-//lấy tài khoản đã đăng ký thừ localstorage
+//lấy tài khoản đã đăng ký từ localstorage
 let saveaccounts = JSON.parse(localStorage.getItem("accounts")) || [];
 accounts=accounts.concat(saveaccounts);
 
@@ -97,12 +97,13 @@ btnregistersubmit.addEventListener("click",register);
 hideall();
 showlogin();
 document.getElementById("btnlogout").style.display = "none";
+
 const gohome=document.getElementById("backhome");
 gohome.addEventListener("click", () => {
     window.location.href="index.html";
 })
+//khôi phục trạng thái đăng nhập, nếu đã login, hiện:
 let currentUser = localStorage.getItem("currentUser");
-
 if (currentUser) {
     document.getElementById("welcometext").innerText = `Xin chào bạn ${currentUser}`;
     document.getElementById("authbuttons").style.display = "none";

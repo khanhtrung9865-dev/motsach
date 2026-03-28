@@ -2,19 +2,19 @@
 Tên: Nguyễn Khánh Trung
 Lớp: 24TTH002
 MSSV: 24T01010 */
-let gioHang = JSON.parse(localStorage.getItem("gioHang")) || [];
+let gioHang = JSON.parse(localStorage.getItem("gioHang")) || []; //lấy giỏ hàng, nếu chưa có tạo mảng rỗng
 
-function luuGioHang(){
+function luuGioHang(){ //lưu mỗi khi có thay đổi
     localStorage.setItem("gioHang", JSON.stringify(gioHang));
 }
 
-function themVaoGio(id, soLuong){
-    const book = books.find(b => b.id === id);
-    const item = gioHang.find(i => i.id === id);
+function themVaoGio(id, soLuong){ 
+    const book = books.find(b => b.id === id); //lấy thông tin
+    const item = gioHang.find(i => i.id === id); // kiểm tra sản phẩm có trong giỏ chưa
 
     if(item){
-        item.soLuong += soLuong;
-    } else {
+        item.soLuong += soLuong; //đã có, + thêm
+    } else {// chưa có, tạo mới
         gioHang.push({
             id: book.id,
             name: book.name,
@@ -24,9 +24,9 @@ function themVaoGio(id, soLuong){
         });
     }
 
-    luuGioHang();
-    capNhatSoLuongIcon();
-    alert("Đã thêm vào giỏ hàng");
+    luuGioHang(); // lưu
+    capNhatSoLuongIcon(); //cập nhật icon
+    alert("Đã thêm vào giỏ hàng"); //thông báo
 }
 function formatVND(x){
     return x.toLocaleString("vi-VN") + " đ";

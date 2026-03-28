@@ -316,3 +316,56 @@ tr:hover {
 #backToTop:hover {
     background: #3d8b8b;
 }
+/* ===== MENU MOBILE ===== */
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* Ghi đè sidebar cũ */
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -260px; /* Ẩn đi */
+        width: 250px;
+        height: 100%;
+        z-index: 1000;
+
+        border-radius: 0; /* bỏ bo góc cho giống menu */
+    }
+
+    .sidebar.active{
+        left: 0;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
